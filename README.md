@@ -10,7 +10,7 @@ JSInterop for web api sensors
 ## Step 1: Add SensorService
 in program.cs add a singleton based on the sensors you need to use.
 ```csharp
-builder.Services.AddSingleton<Accelerometer>();
+builder.Services.AddSingleton<AbsoluteOrientationSensor>();
 ```  
 ## Step 2: Inject SensorService
 Inject the Sensor service in the pages it needs to be used in.
