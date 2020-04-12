@@ -9,9 +9,9 @@ JSInterop for web api sensors
 
 ## Step 1: Add SensorService
 in program.cs add a singleton based on the sensors you need to use.
-
+```csharp
 builder.Services.AddSingleton<Accelerometer>();
-  
+```  
 ## Step 2: Inject SensorService
 Inject the Sensor service in the pages it needs to be used in.
 
@@ -27,7 +27,7 @@ In This example the sensor is activated on the click of a button.
 <button class="btn btn-primary" @onclick="StartSensor">Start</button>
 ```
 
-```html
+```csharp
     private async Task StartSensor()
     {
         if (!sensor.Activated)
