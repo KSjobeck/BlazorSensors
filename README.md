@@ -1,6 +1,9 @@
 # BlazorSensors
 JSInterop for web api sensors
 
+# Download from NuGet
+Install-Package BlazorSensors -Version 1.0.1
+
 # Library Usage
 - Add <script src="_content/BlazorSensors/sensors.js"></script> to wwwroot/index.html file of the file.
 - Add @using BlazorSensors to _Imports.razor file
